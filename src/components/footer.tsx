@@ -325,7 +325,7 @@ const Footer = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
 
-  const images = ["/fbg.png", "/fbg1.jpg"];
+  const images = ["/Fbg.png", "/fbg1.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
