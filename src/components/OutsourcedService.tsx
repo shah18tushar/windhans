@@ -65,7 +65,7 @@ const OutsourcedService = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* LUXURY SECTION - DIV ID 1 */}
         <div id="1" className="w-full pt-16">
           <div className="max-w-7xl mx-auto">

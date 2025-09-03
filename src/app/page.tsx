@@ -48,6 +48,7 @@ import OurWork from "@/components/OurWork";
 import CTA from "@/components/CTA";
 import FullScreenLoader from "@/components/ui/Loader";
 import Journey from "@/components/Journey";
+import CaseStudy from "@/components/CaseStudy";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,6 +72,7 @@ export default function Home() {
           <WhoWeAre />
           <OurWork />
           <Journey />
+          <CaseStudy />
           <Domain />
           <OutsourcedService />
           <WelcomeSection />

@@ -49,9 +49,9 @@ const CTA = () => {
           <div className="w-full lg:w-1/2 text-center relative">
             <div className="relative p-0">
               {/* Premium badge */}
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500 rounded-full text-xs font-bold text-blue-900 mb-6 shadow-lg">
-                <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-                ENTERPRISE READY
+              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500 rounded-full text-xs font-bold uppercase text-blue-900 mb-6 shadow-lg">
+                <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse "></span>
+                Future-Ready Solutions
                 <span className="w-2 h-2 bg-white rounded-full ml-2 animate-pulse"></span>
               </div>
 
