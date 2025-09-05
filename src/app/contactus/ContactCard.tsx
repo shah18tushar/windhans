@@ -103,64 +103,7 @@ const ContactCard = () => {
             </div>
 
             {/* Right side - Company Info */}
-            {/* <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl p-8 shadow-xl max-w-sm w-full">
-                <div className="text-center mb-8">
-                  <div className="flex items-center justify-center gap-2 mb-4">
-                    <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">W</span>
-                    </div>
-                    <span className="text-2xl font-bold text-[#034D9D]">
-                      Windhans Technologies
-                    </span>
-                  </div>
-                </div>
 
-                <div className="space-y-6">
-                  <div className="text-center text-gray-600">
-                    <div className="flex items-center justify-center gap-1 mb-1">
-                      <MapPin size={16} className="text-gray-400" />
-                    </div>
-                    <p className="text-sm leading-relaxed">
-                      Your Company Address,
-                      <br />
-                      City, State, ZIP
-                    </p>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <Phone size={18} className="text-[#034D9D]" />
-                    </div>
-                    <a
-                      href="tel:+1234567890"
-                      className="text-2xl font-bold text-[#034D9D] hover:text-blue-700 transition-colors"
-                    >
-                      +(123) 456-7890
-                    </a>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <Mail size={16} className="text-gray-400" />
-                    </div>
-                    <a
-                      href="mailto:contact@windhans.com"
-                      className="text-[#034D9D] hover:text-blue-700 transition-colors"
-                    >
-                      contact@windhans.com
-                    </a>
-                  </div>
-
-                  <div className="pt-4 border-t border-gray-200">
-                    <button className="w-full flex items-center justify-center gap-2 text-[#034D9D] hover:text-blue-700 font-medium transition-colors">
-                      <MapPin size={16} />
-                      Get directions on the map
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="flex justify-center lg:justify-end">
               <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-md w-full border border-gray-100">
                 {/* Company Logo/Header */}
@@ -264,3 +207,5 @@ const ContactCard = () => {
 };
 
 export default ContactCard;
+
+
