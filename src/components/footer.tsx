@@ -59,7 +59,7 @@ const Footer = () => {
         }
       `}</style>
 
-      <div className="mt-20 relative overflow-hidden rounded-t-[4rem]">
+      <div className="mt-0 relative overflow-hidden rounded-t-[4rem]">
         {/* Background Images with blending transition */}
         <div className="absolute inset-0 z-0">
           {/* Current visible image */}

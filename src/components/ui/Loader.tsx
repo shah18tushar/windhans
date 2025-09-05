@@ -144,7 +144,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const DURATION_MS = 8000; // total time from 0% -> 100%
+const DURATION_MS = 2000; // total time from 0% -> 100%
 
 export default function Loader() {
   const [percent, setPercent] = useState(0);

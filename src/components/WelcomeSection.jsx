@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 const WelcomeSection = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-8">
       {/* Main container with flex layout */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-4 relative">
           {/* Left Section */}
           <div className="flex-1 flex flex-col">
@@ -57,10 +57,10 @@ const WelcomeSection = () => {
               </h2>
 
               <p className="mt-6 text-gray-600 text-[15px] text-center leading-relaxed">
-                Dolor sit amet, consectetur adipiscing elitm sed do eiusmod temp
-                sed incididunt ut labore etsu dolore magna aliquatenim minim
-                veniam quis ipsum nostrud exer citation ullamco laboris nisi ut
-                aliquip ex ea consequat.
+                Wind Hans is also making a mark App Development. With a consumer
+                Apps portfolio across all modern mobile and tablet platforms and
+                has created exciting content products for some of the leading
+                Content Companies.
               </p>
 
               {/* Feature cards */}

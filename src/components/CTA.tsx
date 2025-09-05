@@ -4,7 +4,7 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <section className="relative bg-gradient-to-r from-[#034D9D] via-[#034D9D] to-[#034D9D] py-6 rounded-3xl max-w-7xl mx-auto px-4 overflow-hidden">
+    <section className="relative bg-gradient-to-r from-[#034D9D] via-[#034D9D] to-[#034D9D] py-6 my-10 rounded-3xl max-w-7xl mx-auto px-4 overflow-hidden">
       {/* Background decorative elements - Enhanced */}
       <div className="absolute top-0 left-16 w-72 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
       {/* <div className="absolute top-10 right-20 w-64 h-64 bg-cyan-300 rounded-full filter blur-2xl opacity-15 animate-pulse delay-1000"></div>
@@ -87,12 +87,12 @@ const CTA = () => {
 
           <div className="w-full lg:w-1/4 flex flex-col justify-center">
             <div className="transition-all duration-700 ease-out transform delay-150">
-              <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/50 shadow-2xl">
-                <h3 className="text-xl font-bold text-white mb-2">
+              <div className="bg-white/5 backdrop-blur-md rounded-2xl p-4 border border-white/50 shadow-2xl">
+                <h3 className="text-base font-semibold text-white text-center mb-2">
                   Let's Transform Your Business
                 </h3>
-                <p className="text-white/80 text-sm mb-6">
-                  Get in touch with our experts for a free consultation
+                <p className="text-white/80 text-sm font-medium text-center mb-6">
+                  Schedule a free expert consultation
                 </p>
 
                 <div className="space-y-4">
@@ -133,8 +133,8 @@ const CTA = () => {
                   </button>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10">
-                  <p className="text-white/70 text-xs flex items-center">
+                <div className="mt-6 pt-4 border-t border-white/30">
+                  <p className="text-white/70 text-xs flex items-center justify-center">
                     <svg
                       className="w-4 h-4 mr-2 text-cyan-400"
                       fill="none"

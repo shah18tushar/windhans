@@ -23,7 +23,7 @@
 //       <WelcomeSection />
 //       <CTA />
 //       <AboutUs/>
-//       <FullScreenLoader />
+//       {/* <FullScreenLoader /> */}
 //     </div>
      
 //     </>
@@ -57,7 +57,7 @@ export default function Home() {
     // Simulate loading process
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 8000); // Adjust time as needed
+    }, 2000); // Adjust time as needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -75,7 +75,7 @@ export default function Home() {
           <CaseStudy />
           <Domain />
           <OutsourcedService />
-          <WelcomeSection />
+          {/* <WelcomeSection /> */}
           <CTA />
           {/* <AboutUs /> */}
         </div>
