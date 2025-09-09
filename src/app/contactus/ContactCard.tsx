@@ -105,17 +105,17 @@ const ContactCard = () => {
             {/* Right side - Company Info */}
 
             <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-md w-full border border-gray-100">
+              <div className="bg-white/85 rounded-2xl p-8 shadow-2xl max-w-md w-full">
                 {/* Company Logo/Header */}
                 <div className="text-center mb-6">
-                  <div className="flex flex-col items-center justify-center gap-3 mb-4">
+                  <div className="flex flex-col items-center justify-center gap-1 mb-4">
                     <div className="w-12 h-12 bg-[#034D9D] rounded-full flex items-center justify-center shadow-md">
                       <span className="text-white font-bold text-xl">W</span>
                     </div>
-                    <h2 className="text-2xl font-bold text-[#034D9D]">
-                      Windhans Technologies
+                    <h2 className="text-2xl font-semibold text-[#034D9D]">
+                      WindHans Technologies
                     </h2>
-                    <p className="text-gray-500 text-sm mt-0">
+                    <p className="text-gray-500 text-sm">
                       IT Services & Solutions
                     </p>
                   </div>
@@ -190,7 +190,7 @@ const ContactCard = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <div className="pt-4 border-t border-gray-300 mt-2">
+                  <div className="pt-4 px-4 border-t border-gray-400 mt-2">
                     <button className="w-full flex items-center justify-center gap-2 bg-[#034D9D] hover:bg-blue-800 text-white font-medium py-3 px-4 rounded-lg transition-colors">
                       <MapPin size={16} />
                       Get directions on Google Maps

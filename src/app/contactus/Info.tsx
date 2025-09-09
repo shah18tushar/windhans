@@ -63,7 +63,7 @@ const Info = () => {
           </div>
 
           {/* Eyebrow */}
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+          <p className="text-sm uppercase tracking-widest text-gray-500 mb-4 font-serif">
             Contact • Connect • Collaborate
           </p>
 
@@ -72,9 +72,9 @@ const Info = () => {
             className="font-serif text-3xl sm:text-4xl md:text-4xl leading-tight mb-6"
             style={{ color: "#06182A" /* deep charcoal for body contrast */ }}
           >
-            Handcrafted IT Solutions,{" "} <br />
-            <span className="text-[#034D9D]">Engineered</span> for Enterprise
-            Excellence
+            Handcrafted IT Solutions, <br />
+            Engineered For{" "}
+            <span className="text-[#034D9D]">Enterprise Excellence</span>
           </h2>
 
           {/* Lead paragraph */}
@@ -141,7 +141,7 @@ const Info = () => {
 
           <div className="text-sm text-gray-600">
             <div className="leading-none">
-               E-mail{" "}
+              E-mail{" "}
               <a href="mailto:hello@windhans.com" className="underline">
                 hello@windhans.com
               </a>

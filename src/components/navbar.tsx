@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
       <div className="sticky top-0 z-50 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between md:justify-around items-center h-16">
+          <div className="flex justify-between md:justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
               <img src="/logo.png" alt="" className="w-full h-14" />
@@ -117,6 +117,29 @@ const Navbar = () => {
                   >
                     Services
                   </button>
+                </NavigationMenuItem>
+
+                {/* Team */}
+                <NavigationMenuItem>
+                  <ClickSpark
+                    sparkColor="#034D9D"
+                    sparkSize={10}
+                    sparkRadius={15}
+                    sparkCount={8}
+                    duration={400}
+                  >
+                    <NavigationMenuLink
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link
+                        href="/ourteam"
+                        className="text-[#034D9D] hover:text-blue-600 hover:bg-white"
+                      >
+                        Team
+                      </Link>
+                    </NavigationMenuLink>
+                  </ClickSpark>
                 </NavigationMenuItem>
 
                 {/* Projects (inline dropdown) */}
@@ -305,20 +328,20 @@ const Navbar = () => {
                     </h3>
                     <ul className="space-y-3">
                       <li>
-                        <a
-                          href="#"
+                        <Link
+                          href="/services/webservices/domainservices"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
                         >
                           Domain Registration
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <Link
+                          href="/services/webservices/websitedevelopment"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
                         >
                           Website Development
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a
