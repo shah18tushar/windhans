@@ -73,7 +73,7 @@ const logos = [
 
 export default function ClientsBase() {
   return (
-    <section className="bg-white relative overflow-visible py-6">
+    <section className="bg-white relative overflow-visible py-16">
       {/* Decorative faint pattern (keeps BG white but adds premium texture) */}
       <svg
         className="pointer-events-none absolute inset-0 -z-10 opacity-5"

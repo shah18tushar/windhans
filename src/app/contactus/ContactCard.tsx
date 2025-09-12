@@ -103,7 +103,6 @@ const ContactCard = () => {
             </div>
 
             {/* Right side - Company Info */}
-
             <div className="flex justify-center lg:justify-end">
               <div className="bg-white/85 rounded-2xl p-8 shadow-2xl max-w-md w-full">
                 {/* Company Logo/Header */}

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const WelcomeSection = () => {
   return (
-    <section className="bg-white py-8">
+    <section className="bg-white py-16">
       {/* Main container with flex layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-4 relative">

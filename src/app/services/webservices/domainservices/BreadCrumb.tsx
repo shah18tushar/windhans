@@ -90,11 +90,11 @@ export default function BreadCrumb({ className = "" }: BreadCrumbProps) {
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
 
       {/* Animated particles */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-60">
         {particles.map((style, i) => (
           <div
             key={i}
-            className="absolute rounded-full animate-pulse"
+            className="absolute rounded-full animate-caret-blink"
             style={style}
           />
         ))}
@@ -243,10 +243,10 @@ export default function BreadCrumb({ className = "" }: BreadCrumbProps) {
           <div className="lg:col-span-7 space-y-8">
             {/* Premium Heading Section */}
             <div className="space-y-4">
-              <h1 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-cyan-100 font-extralight ">
+              <h1 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-cyan-100 font-extralight">
                 Enterprise - Focused
-                <span className="block text-3xl mt-1 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent font-extralight">
-                  Web Solutions For Market Leadership
+                <span className="block text-3xl bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent font-extralight leading-relaxed">
+                  Domain Registration For Market Leadership
                 </span>
               </h1>
 

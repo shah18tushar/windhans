@@ -14,7 +14,8 @@ const WhyChooseUs = () => {
   }, []);
 
   return (
-    <section className="bg-white relative overflow-hidden">
+    <section className="bg-white relative overflow-hidden pt-20">
+
 
       <div className="max-w-7xl mx-auto px-6 pb-6 grid grid-cols-[60%_40%] gap-6 items-center relative z-10">
         {/* LEFT: Text content */}

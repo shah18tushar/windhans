@@ -30,7 +30,7 @@ const AnimatedButton = ({
         className={`absolute inset-y-0 left-0 z-0 rounded-full ${bgColor}`}
         variants={{
           rest: { 
-            width: "40%",
+            width: "38%",
             borderRadius: "9999px",
           },
           hover: { 
@@ -39,7 +39,7 @@ const AnimatedButton = ({
           }
         }}
         transition={{ 
-          duration: 0.7, 
+          duration: 0.4, 
           ease: "easeInOut" 
         }}
       />

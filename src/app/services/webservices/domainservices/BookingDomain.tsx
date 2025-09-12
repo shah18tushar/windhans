@@ -60,7 +60,7 @@ export default function BookingDomain() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.12 }}
-              className="mt-6 text-sm max-w-xl text-slate-100/90"
+              className="mt-6 text-base max-w-xl text-slate-100/90"
             >
               Owning a personalized domain projects a professional image and
               demonstrates a serious commitment to your brand. WindHans

@@ -4,7 +4,8 @@ import React from "react";
 import BreadCrumb from "./BreadCrumb";
 import BookingDomain from "./BookingDomain";
 import FreedomChoose from "./Freedom_Choose";
-import KeyPoints from "./KeyPoints";
+import GenerateBusinessName from "./GenerateBusinessName";
+import FAQ from "./FAQ";
 
 const page = () => {
   return (
@@ -12,7 +13,8 @@ const page = () => {
       <BreadCrumb />
       <FreedomChoose />
       <BookingDomain />
-      <KeyPoints />
+      <GenerateBusinessName />
+      <FAQ />
     </div>
   );
 };

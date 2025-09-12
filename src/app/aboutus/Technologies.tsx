@@ -295,7 +295,7 @@ export function Technologies() {
   );
 
   return (
-    <section className="bg-white relative overflow-hidden py-6">
+    <section className="bg-white relative overflow-hidden pb-16">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Executive Header */}
         <div className="text-center mb-10">

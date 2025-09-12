@@ -16,6 +16,7 @@ import {
 import { FiArrowRight } from "react-icons/fi";
 import FooterText from "./ui/FooterText";
 import SlideButton from "./ui/SlideButton";
+import { PhoneIcon } from "lucide-react";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -189,9 +190,23 @@ const Footer = () => {
                       Get In Touch
                     </h3>
 
-                    <div className="space-y-6 mb-6">
+                    <div className="space-y-4 mb-3">
                       <div className="flex items-start gap-4">
-                        <div className="bg-blue-600/20 p-2 rounded-md">
+                        <div className="bg-blue-600/20 p-2 rounded-full">
+                          <PhoneIcon className="w-4 h-4 text-blue-400" />
+                        </div>
+                        <div>
+                          <p className="text-blue-300 text-xs font-medium mb-1 uppercase tracking-wider">
+                            Contact
+                          </p>
+                          <p className="text-white font-light text-sm">
+                            9837104782
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="bg-blue-600/20 p-2 rounded-full">
                           <FaEnvelope className="w-4 h-4 text-blue-400" />
                         </div>
                         <div>
@@ -205,7 +220,7 @@ const Footer = () => {
                       </div>
 
                       <div className="flex items-start gap-4">
-                        <div className="bg-blue-600/20 p-2 rounded-md">
+                        <div className="bg-blue-600/20 p-2 rounded-full">
                           <FaUserTie className="w-4 h-4 text-blue-400" />
                         </div>
                         <div>
@@ -219,7 +234,7 @@ const Footer = () => {
                       </div>
 
                       <div className="flex items-start gap-4">
-                        <div className="bg-blue-600/20 p-2 rounded-md">
+                        <div className="bg-blue-600/20 p-2 rounded-full">
                           <FaMapMarkerAlt className="w-4 h-4 text-blue-400" />
                         </div>
                         <div>
@@ -284,10 +299,10 @@ const Footer = () => {
                     <a
                       key={index}
                       href="#"
-                      className="w-8 h-8 bg-white/5 rounded-md flex items-center justify-center hover:bg-blue-600 transition-all duration-300 group"
+                      className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 group"
                       aria-label={social.label}
                     >
-                      <social.icon className="w-3.5 h-3.5 text-gray-400 group-hover:text-white" />
+                      <social.icon className="w-3.5 h-3.5 text-gray-300 group-hover:text-white" />
                     </a>
                   ))}
                 </div>
