@@ -23,7 +23,9 @@ import {
 
 const Services_Benefits = () => {
   const [activeService, setActiveService] = useState(0);
-  const [hoveredBenefit, setHoveredBenefit] = useState(null);
+  // const [hoveredBenefit, setHoveredBenefit] = useState(null);
+
+  const [hoveredBenefit, setHoveredBenefit] = useState<number | null>(null);
 
   const services = [
     {
