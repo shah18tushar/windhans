@@ -94,7 +94,7 @@ const ContactCard = () => {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-300"
+                  className="inline-flex items-center gap-2 bg-transparent border border-white cursor-pointer text-white font-semibold px-8 py-3 rounded-full transition-all duration-500 hover:scale-90"
                 >
                   Send Message
                   <ExternalLink size={18} />
