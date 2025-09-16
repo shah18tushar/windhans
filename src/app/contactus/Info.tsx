@@ -47,9 +47,9 @@ import React from "react";
 
 const Info = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-6 items-start overflow-x-hidden bg-white">
+    <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] items-start overflow-x-hidden bg-white">
       {/* Left Section For Content */}
-      <div className="px-6 py-12 lg:py-16 lg:px-12 max-w-3xl">
+      <div className="px-6 py-12 lg:py-16 lg:pl-12 max-w-3xl">
         <div className="relative">
           {/* Decorative vertical gold bar */}
           <div className="absolute -left-6 top-10">
@@ -220,7 +220,7 @@ const Info = () => {
       </div>
 
       {/* Right Section Animated Globe File - left exactly as original except minor responsive wrapper */}
-      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-[28rem]">
+      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden -ml-20 pl-40 pb-40 pt-8 md:pb-[28rem]">
         <Globe className="top-0" />
         <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(255, 255, 255, 0.2),rgba(255,255,255,0))]" />
       </div>

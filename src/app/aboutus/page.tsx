@@ -8,14 +8,16 @@ import WhyChooseUs from "./WhyChooseUs";
 import ClientsBase from "./ClientsBase";
 import CTA from "@/components/CTA";
 import Technologies from "./Technologies";
+import StatSection from "./StatSection";
 
 const page = () => {
   return (
     <div>
       <BreadCrumb />
       <AboutSection />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <ClientsBase />
+      <StatSection />
       <WelcomeSection />
       <Technologies />
       <CTA />

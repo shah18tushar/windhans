@@ -307,7 +307,7 @@ const Navbar = () => {
                   <div className="hidden lg:block lg:col-span-2">
                     <div className="relative w-full mb-0 flex items-center justify-center">
                       <video
-                        src="file.mp4"
+                        src="globe.mp4"
                         className="brightness-[0.7] rounded-lg"
                         autoPlay
                         muted
@@ -343,7 +343,7 @@ const Navbar = () => {
                           Website Development
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="#"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
@@ -358,14 +358,14 @@ const Navbar = () => {
                         >
                           Corporate Web Design
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a
-                          href="#"
+                        <Link
+                          href="/services/webservices/websitemaintenance"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
                         >
                           Website Maintenance
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -400,7 +400,7 @@ const Navbar = () => {
                           Mobile App Maintenance
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="#"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
@@ -415,7 +415,7 @@ const Navbar = () => {
                         >
                           Custom App Development
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
 
@@ -449,7 +449,7 @@ const Navbar = () => {
                           Email Support
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="#"
                           className="text-gray-600 hover:text-[#034D9D] text-xs font-medium"
@@ -464,7 +464,7 @@ const Navbar = () => {
                         >
                           IOT / Server Setup
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
 

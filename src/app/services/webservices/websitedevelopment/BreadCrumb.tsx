@@ -10,6 +10,7 @@ import {
   IoShieldCheckmark,
 } from "react-icons/io5";
 import { BsSearchHeart } from "react-icons/bs";
+import { ImPointRight } from "react-icons/im";
 
 interface BreadCrumbProps {
   className?: string;
@@ -27,19 +28,19 @@ const BREADCRUMB_CONFIG = [
     href: "/services/webservices/websitedevelopment",
     path: "/services/webservices/websitedevelopment",
   },
-  {
-    label: "Responsive Website",
-    href: "#",
-    path: "/services/webservices/responsivewebsite",
-  },
-  {
-    label: "Corporate Web Design",
-    href: "#",
-    path: "/services/webservices/corporatewebdesign",
-  },
+  // {
+  //   label: "Responsive Website",
+  //   href: "#",
+  //   path: "/services/webservices/responsivewebsite",
+  // },
+  // {
+  //   label: "Corporate Web Design",
+  //   href: "#",
+  //   path: "/services/webservices/corporatewebdesign",
+  // },
   {
     label: "Website Maintenance",
-    href: "#",
+    href: "/services/webservices/websitemaintenance#",
     path: "/services/webservices/websitemaintenance",
   },
 ];
@@ -108,7 +109,7 @@ export default function BreadCrumb({ className = "" }: BreadCrumbProps) {
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-600 rounded-full"></div>
         </div>
         <h1 className="text-3xl font-extralight font-serif text-start text-white/90 tracking-wide">
-          Web Services
+          Web Services - Website Development
         </h1>
       </div>
 
@@ -210,22 +211,10 @@ export default function BreadCrumb({ className = "" }: BreadCrumbProps) {
                   </div>
 
                   {idx < activeBreadcrumbs.length - 1 && (
-                    <div className="mx-3 flex items-center">
+                    <div className="mx-4 flex items-center">
                       <div className="relative">
-                        <svg
-                          className="w-5 h-5 text-gray-400 transition-all duration-300 group-hover:text-gray-300 transform group-hover:scale-110"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
+                        <ImPointRight className="w-5 h-5 text-gray-400 transition-all duration-300 group-hover:text-gray-300 transform group-hover:scale-110"></ImPointRight>
+
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </div>

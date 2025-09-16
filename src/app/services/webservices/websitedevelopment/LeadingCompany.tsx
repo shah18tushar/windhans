@@ -27,7 +27,7 @@ const LeadingCompany = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/image.jpg"
+            src="/co3.jpg"
             alt="WindHans Technologies Nashik Office / Design Showcase"
             className="w-full h-[36rem] object-cover"
           />
@@ -48,7 +48,7 @@ const LeadingCompany = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <div className="">
-              <span className="text-xs font-semibold tracking-wider text-blue-600 uppercase bg-blue-100 px-3 py-1.5 border border-blue-400 rounded-full">
+              <span className="text-xs font-semibold tracking-wider text-[#034D9D] uppercase bg-blue-100 px-3 py-1.5 border border-[#034D9D] rounded-full">
                 Excellence Defined
               </span>
             </div>
@@ -137,7 +137,6 @@ const LeadingCompany = () => {
           >
             …and achievements defining our excellence
           </p>
-
         </motion.div>
       </div>
     </section>
