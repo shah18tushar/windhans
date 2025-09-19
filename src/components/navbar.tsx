@@ -31,12 +31,10 @@ import ClickSpark from "./ui/ClickSpark"
 
 const Navbar = () => {
   const [servicesDropdown, setServicesDropdown] = React.useState(false)
-  const [projectsDropdown, setProjectsDropdown] = React.useState(false)
 
   // Mobile / tablet
   const [mobileOpen, setMobileOpen] = React.useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = React.useState(false)
-  const [mobileProjectsOpen, setMobileProjectsOpen] = React.useState(false)
 
   return (
     <>
@@ -119,6 +117,52 @@ const Navbar = () => {
                   </button>
                 </NavigationMenuItem>
 
+                {/* Case Study */}
+                <NavigationMenuItem>
+                  <ClickSpark
+                    sparkColor="#034D9D"
+                    sparkSize={10}
+                    sparkRadius={15}
+                    sparkCount={8}
+                    duration={400}
+                  >
+                    <NavigationMenuLink
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link
+                        href="/casestudy"
+                        className="text-[#034D9D] hover:text-blue-600 hover:bg-white"
+                      >
+                        Case Study
+                      </Link>
+                    </NavigationMenuLink>
+                  </ClickSpark>
+                </NavigationMenuItem>
+
+                {/* Careers */}
+                <NavigationMenuItem>
+                  <ClickSpark
+                    sparkColor="#034D9D"
+                    sparkSize={10}
+                    sparkRadius={15}
+                    sparkCount={8}
+                    duration={400}
+                  >
+                    <NavigationMenuLink
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link
+                        href="/careers"
+                        className="text-[#034D9D] hover:text-blue-600 hover:bg-white"
+                      >
+                        Careers
+                      </Link>
+                    </NavigationMenuLink>
+                  </ClickSpark>
+                </NavigationMenuItem>
+
                 {/* Team */}
                 <NavigationMenuItem>
                   <ClickSpark
@@ -137,87 +181,6 @@ const Navbar = () => {
                         className="text-[#034D9D] hover:text-blue-600 hover:bg-white"
                       >
                         Team
-                      </Link>
-                    </NavigationMenuLink>
-                  </ClickSpark>
-                </NavigationMenuItem>
-
-                {/* Projects (inline dropdown) */}
-                <NavigationMenuItem
-                  onMouseEnter={() => setProjectsDropdown(true)}
-                  onMouseLeave={() => setProjectsDropdown(false)}
-                  className="relative h-full flex items-center"
-                >
-                  <button
-                    aria-expanded={projectsDropdown}
-                    className={`px-3 py-2 text-sm font-medium flex items-center h-full rounded-t-xl cursor-pointer
-                    ${
-                      projectsDropdown
-                        ? "bg-[#034D9D] text-white"
-                        : "text-[#034D9D] hover:bg-[#034D9D] hover:text-white hover:rounded-t-xl"
-                    }`}
-                  >
-                    Projects
-                  </button>
-
-                  <AnimatePresence>
-                    {projectsDropdown && (
-                      <motion.div
-                        initial={{ opacity: 0, y: -6, scale: 0.98 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: -6, scale: 0.98 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute -left-[3.7rem] top-full mt-3 w-48 bg-white shadow-lg z-50 border-t-4 border-[#034D9D] rounded-t-3xl"
-                      >
-                        <div className="py-2 mx-2">
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:rounded-t-xl"
-                          >
-                            Project 1
-                          </a>
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:rounded-t-xl"
-                          >
-                            Project 2
-                          </a>
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:rounded-t-xl"
-                          >
-                            Project 3
-                          </a>
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:rounded-t-xl"
-                          >
-                            Project 4
-                          </a>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </NavigationMenuItem>
-
-                {/* Careers */}
-                <NavigationMenuItem>
-                  <ClickSpark
-                    sparkColor="#034D9D"
-                    sparkSize={10}
-                    sparkRadius={15}
-                    sparkCount={8}
-                    duration={400}
-                  >
-                    <NavigationMenuLink
-                      asChild
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      <Link
-                        href="#"
-                        className="text-[#034D9D] hover:text-blue-600 hover:bg-white"
-                      >
-                        Careers
                       </Link>
                     </NavigationMenuLink>
                   </ClickSpark>
@@ -745,56 +708,6 @@ const Navbar = () => {
                             </ul>
                           </div>
                         </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                {/* Projects */}
-                <div className="border-b border-gray-100">
-                  <button
-                    onClick={() => setMobileProjectsOpen((o) => !o)}
-                    aria-expanded={mobileProjectsOpen}
-                    className="w-full flex items-center justify-between px-2 py-3 text-left text-[#034D9D] font-medium"
-                  >
-                    <span>Projects</span>
-                    {mobileProjectsOpen ? (
-                      <FaChevronUp className="text-[#034D9D]" />
-                    ) : (
-                      <FaChevronDown className="text-[#034D9D]" />
-                    )}
-                  </button>
-                  <AnimatePresence>
-                    {mobileProjectsOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="pl-3 pb-2"
-                      >
-                        <ul className="space-y-2">
-                          <li>
-                            <a href="#" className="block text-gray-600 text-sm">
-                              Project 1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="block text-gray-600 text-sm">
-                              Project 2
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="block text-gray-600 text-sm">
-                              Project 3
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="block text-gray-600 text-sm">
-                              Project 4
-                            </a>
-                          </li>
-                        </ul>
                       </motion.div>
                     )}
                   </AnimatePresence>

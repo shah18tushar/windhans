@@ -28,7 +28,7 @@ const ContactCard = () => {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat relative my-20"
+      className="h-full bg-cover bg-center bg-no-repeat relative my-20"
       style={{
         backgroundImage: "url('/img1.png')",
       }}
@@ -42,7 +42,7 @@ const ContactCard = () => {
             {/* Left side - Contact Form */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-extralight font-serif text-white mb-4">
+                <h1 className="text-4xl lg:text-5xl font-extralight font-serif text-blue-100 mb-4">
                   Let's Get In Touch!
                 </h1>
                 <p className="text-lg text-blue-100">
@@ -94,7 +94,7 @@ const ContactCard = () => {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-transparent border border-white cursor-pointer text-white font-semibold px-8 py-3 rounded-full transition-all duration-500 hover:scale-90"
+                  className="inline-flex items-center gap-2 bg-transparent border border-white cursor-pointer text-white/80 font-semibold px-8 py-3 rounded-full transition-all duration-500 hover:scale-90"
                 >
                   Send Message
                   <ExternalLink size={18} />
@@ -104,7 +104,7 @@ const ContactCard = () => {
 
             {/* Right side - Company Info */}
             <div className="flex justify-center lg:justify-end">
-              <div className="bg-white/85 rounded-2xl p-8 shadow-2xl max-w-md w-full">
+              <div className="bg-white/90 rounded-2xl p-8 shadow-2xl max-w-md w-full">
                 {/* Company Logo/Header */}
                 <div className="text-center mb-6">
                   <div className="flex flex-col items-center justify-center gap-1 mb-4">
@@ -206,5 +206,3 @@ const ContactCard = () => {
 };
 
 export default ContactCard;
-
-
